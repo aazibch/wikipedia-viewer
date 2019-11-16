@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    background: #f7f7f7;
+}
+
+.button {
+    background: #ebebeb;
+    border: 1px solid #c1c1c1;
+    color: #474747;
+}
+
+.button:hover {
+    color: #232323;
+    border-color: #adadad;
+    background: #e0e0e0;
+}
+
+/*Home*/
+#home-main-content {
+    margin: 15% auto 0 auto;
+    max-width: 500px;
+}
+
+#home-app-title {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+#home-search-form {
+    margin-bottom: 20px;
+}
+
+#home-search-bar-wrapper {
+    position: relative;
+}
+
+#home-search-field {
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    border-style: none;
+    outline: none;
+    -webkit-box-shadow:  0 2px 4px rgba(0, 0, 0, 0.125), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    padding-right: 48px;
+}
+
+#home-search-field:focus {
+    -webkit-box-shadow:  0 2px 4px rgba(0, 0, 0, 0.125), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+#home-search-button {
+    width: 45px;
+    height: 40px;
+    background: transparent;
+    border-style: none;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #474747;
+}
+
+#home-search-button:hover {
+    background: #e0e0e0;
+    color: #232323;
+}
+
+#home-search-button:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline-style: none !important;
+}
+
+#random-button-wrapper {
+    margin-bottom: 50px;
+}
+
+/*Results*/
+header {
+    padding: 15px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#results-app-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin-right: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+#full-app-title {
+    display: none;
+}
+
+#short-app-title {
+    display: inline;
+}
+
+#results-search-form {
+    overflow-x: hidden;
+}
+
+#results-search-bar-wrapper {
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    float: left;
+}
+
+#results-search-field {
+    border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DFDFDF #DFDFDF #d5d5d5;
+    width: 100%;
+    height: 37px;
+    padding-left: 7px;
+    padding-right: 43px;
+}
+
+#results-search-field:focus {
+    box-shadow: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DFDFDF #DFDFDF #d5d5d5;
+    outline: none;
+}
+
+#results-search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: #DFDFDF #DFDFDF #d5d5d5;
+    background: transparent;
+    height: 37px;
+    width: 42px;
+}
+
+#results-search-button:hover {
+    background: #e0e0e0;
+    color: #232323;
+}
+
+#results-search-button:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline-style: none !important;
+}
+
+#home-button {
+    margin-left: 20px;
+    float: right;
+    font-size: 15px;
+}
+
+#home-button:active {
+    outline-style: none !important;
+}
+
+#no-results-message {
+    margin: 25px 0;
+}
+
+#results-main-section {
+    background: #fff;
+}
+
+#results {
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+#results h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+#results p {
+    margin-bottom: 25px;
+}
+
+#results-footer {
+    padding: 30px 0;
+    border-top: 1px solid #D9D9D9;
+}
+
+#results-footer p {
+    margin-bottom: 0;
+}
+
+/* Media Query */
+@media (min-width: 600px) {
+    #full-app-title {
+        display: inline;
+    }
+
+    #short-app-title {
+        display: none;
+    }
+}

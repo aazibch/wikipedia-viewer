@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Wikipedia Viewer</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Home -->
+        <div id="home-content">
+            <div class="container">
+                <div id="home-main-content">
+                    <span id="home-app-title" class="text-center">Wikipedia Viewer</span>
+                    <form id="home-search-form">
+                        <div id="home-search-bar-wrapper">
+                            <input id="home-search-field" type="search" autofocus autocomplete="off">
+                            <button id="home-search-button" class="btn search-button" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="random-button-wrapper" class="text-center">
+                        <a class="button btn" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                            <i class="fa fa-random" aria-hidden="true"></i>
+                            Random
+                        </a>
+                    </div>
+                </div>
+
+                <footer id="home-footer" class="text-center text-muted">
+                    <p class="small">Coded by Aazib Chaudhry.</p>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results-content" class="hidden">
+            <header>
+                <div class="container">
+                    <span id="results-app-title">
+                        <span id="full-app-title">Wikipedia Viewer</span>
+                        <span id="short-app-title">WV</span>
+                    </span>
+                    <button id="home-button" class="btn button" type="button">
+                        <i class="fa fa-home"></i>
+                    </button>
+                    <form id="results-search-form">
+                        <div id="results-search-bar-wrapper">
+                            <input id="results-search-field" type="search" autocomplete="off">
+                            <button id="results-search-button" class="btn" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </header>
+
+            <div id="results-main-section">
+                <!-- Content to be added with JavaScript. -->
+            </div>
+
+            <footer id="results-footer" class="text-muted text-center">
+                <div class="container">
+                    <p class="small">Coded by Aazib Chaudhry.</p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
